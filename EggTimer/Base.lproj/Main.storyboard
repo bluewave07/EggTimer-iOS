@@ -121,6 +121,17 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJN-th-c5K" userLabel="Timer View">
                                         <rect key="frame" x="0.0" y="568.5" width="374" height="245.5"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NLA-EP-Pf8">
+                                                <rect key="frame" x="0.0" y="121" width="374" height="4"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="NLA-EP-Pf8" firstAttribute="centerX" secondItem="nJN-th-c5K" secondAttribute="centerX" id="8nz-q0-aRb"/>
+                                            <constraint firstItem="NLA-EP-Pf8" firstAttribute="centerY" secondItem="nJN-th-c5K" secondAttribute="centerY" id="Rzl-O0-ngp"/>
+                                            <constraint firstAttribute="trailing" secondItem="NLA-EP-Pf8" secondAttribute="trailing" id="VN5-MC-cV8"/>
+                                            <constraint firstItem="NLA-EP-Pf8" firstAttribute="leading" secondItem="nJN-th-c5K" secondAttribute="leading" id="i2F-q1-iC9"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -134,6 +145,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="wI6-ag-afn" secondAttribute="trailing" id="dky-ZA-Z3J"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="NLA-EP-Pf8" id="Q3J-4B-jnK"/>
+                        <outlet property="titleLabel" destination="XLm-5r-pSP" id="8VU-Mf-CYp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
